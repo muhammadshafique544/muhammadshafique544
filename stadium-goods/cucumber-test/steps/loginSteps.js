@@ -1,23 +1,17 @@
-const {Given, When, Then} = require('@cucumber/cucumber');
+const { Given, When, Then } = require('@wdio/cucumber-framework');
 
-const LoginScreen = require('../screens/login.screen');
+const LoginPage = require('../screens/login.screen');
 
-Given(/^I launch the app$/, () => {
-    return LoginScreen.launchApp();
+
+Given(/^I am on the (\w+) page$/, async (page) => {
+    await LoginPage.veryfiyText()
 });
 
-Then(/^I expect that element (.*) is displayed$/, (checkElement) => {
-    return LoginScreen.verifyElementWaitedForDisplayed(checkElement, 15000);
+When(/^I login with (\w+) and (.+)$/, async (username,password) => {
+    await LoginPage.login('cucumber@mobven.com', 'Pass321*')
 });
 
-When(/^I set (.*) to the inputfield (.*)$/, (data,element) => {
-    return LoginScreen.setElement(data,element);
+Then(/^It should click the button$/, async () => {
+        await LoginPage.clickButton()
 });
 
-When(/^I tap that element (.*)$/, (element) => {
-    return LoginScreen.tapElement(element);
-});
-
-Then(/^I should see that element (.*) to be displayed$/, (checkElement) => {
-    return LoginScreen.expectElementDisplayed(checkElement);
-});

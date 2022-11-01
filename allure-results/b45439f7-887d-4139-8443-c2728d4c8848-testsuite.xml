@@ -1,0 +1,45 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1666374371380' stop='1666374398675'>
+    <name>Login with bank account</name>
+    <title>Login with bank account</title>
+    <test-cases>
+        <test-case start='1666374371381' status='broken' stop='1666374398674'>
+            <name>should validate hello world Test</name>
+            <title>should validate hello world Test</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='device' value='iPhone 13-15.0'/>
+                <parameter kind='argument' name='device' value='iPhone 13-15.0'/>
+                <parameter kind='argument' name='device' value='iPhone 13-15.0'/>
+                <parameter kind='argument' name='device' value='iPhone 13-15.0'/>
+                <parameter kind='argument' name='device' value='iPhone 13-15.0'/>
+            </parameters>
+            <steps/>
+            <attachments>
+                <attachment title='Screenshot' source='f05a98ff-3cda-451e-b393-e36cc7c6dce1-attachment.png' type='image/png' size='173780'/>
+            </attachments>
+            <failure>
+                <message>Can't call click on element with selector "id:login_btn" because element wasn't found</message>
+                <stack-trace>Error: Can't call click on element with selector "id:login_btn" because element wasn't found
+                    at LoginPage.login (/Users/dev/Desktop/projectss/ios/stadium-goods/stadium-goods/pom-test/pageobjects/login.page.js:21:9)
+                    at Context.&lt;anonymous> (/Users/dev/Desktop/projectss/ios/stadium-goods/stadium-goods/pom-test/specs/pomTest.js:23:9)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

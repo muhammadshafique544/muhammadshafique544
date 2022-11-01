@@ -1,0 +1,45 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1666373688138' stop='1666373688585'>
+    <name>Login with bank account</name>
+    <title>Login with bank account</title>
+    <test-cases>
+        <test-case start='1666373688139' status='broken' stop='1666373688584'>
+            <name>should validate hello world Test</name>
+            <title>should validate hello world Test</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='device' value='iPhone 13-15.0'/>
+                <parameter kind='argument' name='device' value='iPhone 13-15.0'/>
+                <parameter kind='argument' name='device' value='iPhone 13-15.0'/>
+                <parameter kind='argument' name='device' value='iPhone 13-15.0'/>
+                <parameter kind='argument' name='device' value='iPhone 13-15.0'/>
+            </parameters>
+            <steps/>
+            <attachments>
+                <attachment title='Screenshot' source='2020aa39-30f9-4744-a141-4edf247aa13e-attachment.png' type='image/png' size='399118'/>
+            </attachments>
+            <failure>
+                <message>The selector "value:Username" used with strategy "css selector" is invalid! For more information on selectors visit the WebdriverIO docs at: https://webdriver.io/docs/selectors</message>
+                <stack-trace>invalid selector: The selector "value:Username" used with strategy "css selector" is invalid! For more information on selectors visit the WebdriverIO docs at: https://webdriver.io/docs/selectors
+                    at LoginPage.login (/Users/dev/Desktop/projectss/ios/stadium-goods/stadium-goods/pom-test/pageobjects/login.page.js:18:9)
+                    at Context.&lt;anonymous> (/Users/dev/Desktop/projectss/ios/stadium-goods/stadium-goods/pom-test/specs/pomTest.js:23:9)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

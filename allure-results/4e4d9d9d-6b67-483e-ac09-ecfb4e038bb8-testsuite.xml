@@ -1,0 +1,147 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1666876132431' stop='1666876132441'>
+    <name>Login test on mobile app: Successfully Login</name>
+    <title>Login test on mobile app: Successfully Login</title>
+    <test-cases>
+        <test-case start='1666876132431' status='passed' stop='1666876132434'>
+            <name></name>
+            <title></title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='device' value='iPhone 13-15.0'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1666876132434' status='broken' stop='1666876132439'>
+            <name>Given I launch the app</name>
+            <title>Given I launch the app</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='device' value='iPhone 13-15.0'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>TypeError: LoginScreen.launchApp is not a function</message>
+                <stack-trace>TypeError: LoginScreen.launchApp is not a function
+                    at World.&lt;anonymous> (/Users/dev/Desktop/projectss/ios/stadium-goods/stadium-goods/cucumber-test/steps/loginSteps.js:5:30)
+                    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+                    at async wrapPromiseWithTimeout (/Users/dev/Desktop/projectss/ios/stadium-goods/node_modules/@cucumber/cucumber/lib/time.js:67:12)
+                    at async Object.run (/Users/dev/Desktop/projectss/ios/stadium-goods/node_modules/@cucumber/cucumber/lib/user_code_runner.js:64:22)
+                    at async Object.run (/Users/dev/Desktop/projectss/ios/stadium-goods/node_modules/@cucumber/cucumber/lib/runtime/step_runner.js:52:26)
+                    at async TestCaseRunner.invokeStep (/Users/dev/Desktop/projectss/ios/stadium-goods/node_modules/@cucumber/cucumber/lib/runtime/test_case_runner.js:93:16)
+                    at async TestCaseRunner.runStep (/Users/dev/Desktop/projectss/ios/stadium-goods/node_modules/@cucumber/cucumber/lib/runtime/test_case_runner.js:237:26)
+                    at async /Users/dev/Desktop/projectss/ios/stadium-goods/node_modules/@cucumber/cucumber/lib/runtime/test_case_runner.js:163:48</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1666876132439' status='pending' stop='1666876132439'>
+            <name>Then I expect that element xpath://XCUIElementTypeApplication[@name="Appium"]/XCUIElementTypeWindow/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTextField is displayed</name>
+            <title>Then I expect that element xpath://XCUIElementTypeApplication[@name="Appium"]/XCUIElementTypeWindow/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTextField is displayed</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='device' value='iPhone 13-15.0'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1666876132439' status='pending' stop='1666876132439'>
+            <name>When I set cucumber@mobven.com to the inputfield xpath: xpath://XCUIElementTypeApplication[@name="Appium"]/XCUIElementTypeWindow/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTextField</name>
+            <title>When I set cucumber@mobven.com to the inputfield xpath: xpath://XCUIElementTypeApplication[@name="Appium"]/XCUIElementTypeWindow/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTextField</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='device' value='iPhone 13-15.0'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1666876132439' status='pending' stop='1666876132439'>
+            <name>And I set Pass321* to the inputfield xpath://XCUIElementTypeApplication[@name="Appium"]/XCUIElementTypeWindow/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeSecureTextField</name>
+            <title>And I set Pass321* to the inputfield xpath://XCUIElementTypeApplication[@name="Appium"]/XCUIElementTypeWindow/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeSecureTextField</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='device' value='iPhone 13-15.0'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1666876132440' status='broken' stop='1666876132440'>
+            <name>And I tap that element accessibility id:LOGIN</name>
+            <title>And I tap that element accessibility id:LOGIN</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='device' value='iPhone 13-15.0'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Step "I tap that element accessibility id:LOGIN" is not defined. You can ignore this error by setting cucumberOpts.ignoreUndefinedDefinitions as true.</message>
+                <stack-trace>Step "I tap that element accessibility id:LOGIN" is not defined. You can ignore this error by setting cucumberOpts.ignoreUndefinedDefinitions as true.
+                	at Feature(/Users/dev/Desktop/projectss/ios/stadium-goods/stadium-goods/cucumber-test/features/loginTest.feature):1:1
+                	at Scenario(Successfully Login):9:5
+                	at Step(I tap that element accessibility id:LOGIN):12:9
+                </stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1666876132440' status='broken' stop='1666876132440'>
+            <name>Then It should tap that button</name>
+            <title>Then It should tap that button</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='device' value='iPhone 13-15.0'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Step "It should tap that button" is not defined. You can ignore this error by setting cucumberOpts.ignoreUndefinedDefinitions as true.</message>
+                <stack-trace>Step "It should tap that button" is not defined. You can ignore this error by setting cucumberOpts.ignoreUndefinedDefinitions as true.
+                	at Feature(/Users/dev/Desktop/projectss/ios/stadium-goods/stadium-goods/cucumber-test/features/loginTest.feature):1:1
+                	at Scenario(Successfully Login):9:5
+                	at Step(It should tap that button):13:9
+                </stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1666876132440' status='passed' stop='1666876132440'>
+            <name></name>
+            <title></title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='device' value='iPhone 13-15.0'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

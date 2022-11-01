@@ -1,0 +1,45 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1666337840354' stop='1666337855630'>
+    <name>Login with bank account</name>
+    <title>Login with bank account</title>
+    <test-cases>
+        <test-case start='1666337840354' status='broken' stop='1666337855630'>
+            <name>should login with valid credentials</name>
+            <title>should login with valid credentials</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='device' value='iPhone 13-15.0'/>
+                <parameter kind='argument' name='device' value='iPhone 13-15.0'/>
+                <parameter kind='argument' name='device' value='iPhone 13-15.0'/>
+                <parameter kind='argument' name='device' value='iPhone 13-15.0'/>
+                <parameter kind='argument' name='device' value='iPhone 13-15.0'/>
+            </parameters>
+            <steps/>
+            <attachments>
+                <attachment title='Screenshot' source='427d4dfd-35c0-41cc-ae22-8f7634e836f7-attachment.png' type='image/png' size='85085'/>
+            </attachments>
+            <failure>
+                <message>element ("id:username_txt") still not displayed after 15000ms</message>
+                <stack-trace>Error: element ("id:username_txt") still not displayed after 15000ms
+                    at async LoginPage.login (/Users/dev/Desktop/projectss/ios/stadium-goods/stadium-goods/pom-test/pageobjects/login.page.js:18:9)
+                    at async Context.&lt;anonymous> (/Users/dev/Desktop/projectss/ios/stadium-goods/stadium-goods/pom-test/specs/pomTest.js:20:9)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

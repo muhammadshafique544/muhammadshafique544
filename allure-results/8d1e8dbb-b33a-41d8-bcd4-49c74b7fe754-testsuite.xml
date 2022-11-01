@@ -1,0 +1,45 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1666373881814' stop='1666373900134'>
+    <name>Login with bank account</name>
+    <title>Login with bank account</title>
+    <test-cases>
+        <test-case start='1666373881815' status='broken' stop='1666373900134'>
+            <name>should validate hello world Test</name>
+            <title>should validate hello world Test</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='device' value='iPhone 13-15.0'/>
+                <parameter kind='argument' name='device' value='iPhone 13-15.0'/>
+                <parameter kind='argument' name='device' value='iPhone 13-15.0'/>
+                <parameter kind='argument' name='device' value='iPhone 13-15.0'/>
+                <parameter kind='argument' name='device' value='iPhone 13-15.0'/>
+            </parameters>
+            <steps/>
+            <attachments>
+                <attachment title='Screenshot' source='5614a426-dbce-4a77-b98c-556516b55467-attachment.png' type='image/png' size='364488'/>
+            </attachments>
+            <failure>
+                <message>Can't call setValue on element with selector "id:password_txt" because element wasn't found</message>
+                <stack-trace>Error: Can't call setValue on element with selector "id:password_txt" because element wasn't found
+                    at LoginPage.login (/Users/dev/Desktop/projectss/ios/stadium-goods/stadium-goods/pom-test/pageobjects/login.page.js:20:9)
+                    at Context.&lt;anonymous> (/Users/dev/Desktop/projectss/ios/stadium-goods/stadium-goods/pom-test/specs/pomTest.js:23:9)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

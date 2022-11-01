@@ -1,14 +1,14 @@
 const allure = require('allure-commandline');
 const {DATA} = require('../../test-settings.js');
 
-var remoteDebugProxy =  DATA.CLOUD['momentum.deviceList'][0] + 2000;
-var remoteDebugProxys = remoteDebugProxy.toString();
+// var remoteDebugProxy =  DATA.CLOUD['momentum.deviceList'][0] + 2000;
+// var remoteDebugProxys = remoteDebugProxy.toString();
 
 exports.config = {
-    hostname: DATA.CLOUD['momentum.hostname'],
-    port: DATA.CLOUD['momentum.gw'],
-    path: DATA.CLOUD['momentum.path'],
-    protocol: DATA.CLOUD['momentum.protocol'],
+    hostname: DATA.LOCAL['hostname'],
+    port: DATA.LOCAL['port'],
+    path: DATA.LOCAL['path'],
+    protocol: DATA.LOCAL['protocol'],
     specs: [
         './stadium-goods/cucumber-test/features/**/*.feature'
     ],
@@ -16,21 +16,15 @@ exports.config = {
     maxInstances: 1,
     capabilities: [{
         platformName: "iOS",
-        "appium:app": DATA.CLOUD['momentum.app'],
+        "appium:app": "/Users/dev/Desktop/Appium/build/Release-iphonesimulator/Appium.app",
         "appium:automationName": "XCUITest",
         "appium:autoAcceptAlerts": true,
         "appium:language": "en",
         "appium:locale": "en",
-        "appium:fullReset": true,
-        "appium:noReset": false,
-        "appium:deviceName": "",
-        "appium:udid": "",
-        "appium:remoteDebugProxy": remoteDebugProxys,
-        "momentum:options": {
-            "user": DATA.CLOUD['momentum.user'],
-            "token": DATA.CLOUD['momentum.token'],
-            "gw": DATA.CLOUD['momentum.deviceList'][0]
-        }
+        // "appium:fullReset": true,
+        "appium:noReset": true,
+        "appium:deviceName": "iPhone 13",
+        "appium:platformVersion": "15.0",
     }],
     logLevel: 'info',
     bail: 0,

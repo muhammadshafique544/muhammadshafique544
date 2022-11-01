@@ -1,27 +1,47 @@
+
+
 const Page = require('./screen');
 
-class LoginScreen extends Page {
-
-    async launchApp () {
+/**
+ * sub page containing specific selectors and methods for a specific page
+ */
+class LoginPage extends Page {
+    /**
+     * define selectors using getter methods
+     */
+    get welcomeText(){
+        return $('accessibility id:Welcome!')
+    }
+     get inputUsername () {
+        
+        return $('xpath://XCUIElementTypeApplication[@name="Appium"]/XCUIElementTypeWindow/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTextField');
     }
 
-    async verifyElementWaitedForDisplayed (element, waitTime) {
-        await $(element).waitForDisplayed({ timeout: waitTime });
+    get inputPassword () {
+        return $('xpath://XCUIElementTypeApplication[@name="Appium"]/XCUIElementTypeWindow/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeSecureTextField');
     }
+
+    get btnSubmit () {
+        return $('accessibility id:LOGIN');
+    }
+     
     
-    async setElement (data, element) {
-        await $(element).addValue(data);
+    async veryfiyText(){
+        await expect(this.welcomeText).toBeDisplayed()
     }
-
-    async tapElement (element) {
-        await $(element).click();
+    async login (username, password) {
+        await this.inputUsername.setValue(username);
+        await this.inputPassword.setValue(password);
     }
-
-    async expectElementDisplayed (element) {
-        await browser.pause(3000);
-        await expect($(element)).toBeDisplayed()
+    async clickButton(){
+        await this.btnSubmit.click();
     }
-
+    /**
+     * overwrite specific options to adapt it to page object
+     */
+    open () {
+        return super.open('login');
+    }
 }
 
-module.exports = new LoginScreen();
+module.exports = new LoginPage();
